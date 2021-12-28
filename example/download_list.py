@@ -18,7 +18,7 @@ def main():
     # list2_path = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\ManateesList2.txt'
     list2_path = './ManateesList2.txt'
     # outfolder = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\wavs'
-    outfolder = './wavs'
+    outfolder = '../../wavs'
     dropbox_folder = '2021-ManateeAcousticsDeepVoice'
     dropbox_subfolder1 = '2017-Jul-08-12-67407878-SGC-RestingHole1A/WAV'
     dropbox_subfolder2 = '2017-Jul-14-17-67407878-SGC-RestingHole1A/WAV'
