@@ -54,6 +54,8 @@ def main():
         number_of_samples = round(len(data) * float(new_rate) / sr)
         data = sps.resample(data, number_of_samples)
         print(len(data))
+        wav_file = os.path.join(outfolder, file)
+        soundfile.write(wav_file, data, new_rate)
 
 
         break
