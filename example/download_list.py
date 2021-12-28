@@ -13,9 +13,12 @@ parser.add_argument('--listpath', default=None, help='path to list of file names
 
 def main():
     args = parser.parse_args()
-    list1_path = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\ManateesList1.txt'
-    list2_path = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\ManateesList2.txt'
-    outfolder = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\wavs'
+    # list1_path = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\ManateesList1.txt'
+    list1_path = './ManateesList1.txt'
+    # list2_path = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\ManateesList2.txt'
+    list2_path = './ManateesList2.txt'
+    # outfolder = r'C:\Users\amitg\Documents\Deep Voice\HF WAV Manatee Samples\BB_analysis\wavs'
+    outfolder = './wavs'
     dropbox_folder = '2021-ManateeAcousticsDeepVoice'
     dropbox_subfolder1 = '2017-Jul-08-12-67407878-SGC-RestingHole1A/WAV'
     dropbox_subfolder2 = '2017-Jul-14-17-67407878-SGC-RestingHole1A/WAV'
@@ -51,6 +54,7 @@ def main():
         number_of_samples = round(len(data) * float(new_rate) / sr)
         data = sps.resample(data, number_of_samples)
         print(len(data))
+
 
         break
 
